@@ -1,0 +1,14 @@
+<button onclick="play1()">Audio1</button>
+
+<button onclick="play2()">Audio2</button>
+
+
+function play1() {
+  var audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a');
+  audio.play();
+}
+
+function play2() {
+  var audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-assets/week7-bounce.m4a');
+  audio.play();
+}

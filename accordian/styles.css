@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e90f0fa3), to(#bce63f)) fixed;
+    display: flex;
+}
+
+.accordian .contentbox {
+    position: relative;
+    margin: 50px;
+}
+
+.accordian .contentbox .label {
+    position: relative ; 
+    padding: 10px;
+    background-color: #bce63f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordian .contentbox .label ::before {
+    content : "+";
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 1.5rem;
+}
+
+.accordian .contentbox .content {
+    position: relative;
+    background-color: antiquewhite;
+    height: 0; 
+    overflow: hidden ; 
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordian .contentbox.active .content {
+    height: 100px;
+    padding: 10px;
+}

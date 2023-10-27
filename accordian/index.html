@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <div class="accordian">
+        <div class="contentbox">
+            <div class="label">
+                <h1>Cillian Murphy</h1>
+            </div>
+            <div class="content">
+                Cillian Murphy is an Irish actor. He made his professional debut in Enda Walsh's 1996 play Disco Pigs, a role he later reprised in the 2001 screen adaptation
+            </div>
+        </div>
+
+        <div class="contentbox">
+            <div class="label">
+                <h1>Robert John Downey Jr</h1>
+            </div>
+            <div class="content">
+                Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.
+            </div>
+        </div>
+        
+        <div class="contentbox">
+            <div class="label">
+                <h1>Robert John Downey Jr</h1>
+            </div>
+            <div class="content">
+                Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const accordian = document.getElementsByClassName('contentbox') 
+        console.log(accordian)
+    for(let i =0 ; i<accordian.length; i++) {
+        accordian[i].addEventListener('click', function (){
+            console.log("clicked")
+            this.classList.toggle('active')
+        })
+    }
+    </script>
+</body>
+</html>
