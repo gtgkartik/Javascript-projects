@@ -1,9 +1,18 @@
-<button onclick="play1()">Audio1</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="play1()">Audio1</button>
 
 <button onclick="play2()">Audio2</button>
 
 
-function play1() {
+<script>
+    function play1() {
   var audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a');
   audio.play();
 }
@@ -12,3 +21,6 @@ function play2() {
   var audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-assets/week7-bounce.m4a');
   audio.play();
 }
+</script>
+</body>
+</html>
